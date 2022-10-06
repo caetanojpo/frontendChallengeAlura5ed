@@ -50,21 +50,26 @@
                     <label for="link">URL da imagem</label>
                     <input type="url" name="link" id="" placeholder="">
                 </div>
-                <div class="adc__form___item">
-                    <label for="categoria">Categoria</label>
-                    <input type="url" name="categoria" id="" placeholder="">
+                <div class="adc__form___item adc__categoria">
+                    <label for="categoria" class="">Categoria:</label>
+                    <select class="adc__select" name="categoria">
+                        <option  class="adc__select___item" value="" disabled selected>Selecione a categoria</option>
+                        <option  class="adc__select___item" value="1">Star Wars</option>
+                        <option  class="adc__select___item" value="2">Consoles</option>
+                        <option  class="adc__select___item" value="3">Diversos</option>
+                      </select>
                 </div>
                 <div class="adc__form___item">
                     <label for="nome">Nome do Produto</label>
-                    <input type="url" name="nome" id="" placeholder="">
+                    <input type="text" name="nome" id="" placeholder="">
                 </div>
                 <div class="adc__form___item">
                     <label for="preco">Preço do produto</label>
-                    <input type="url" name="precco" id="" placeholder="">
+                    <input type="number" name="preco" id="" placeholder="">
                 </div>
                 <div class="adc__form___item adc__form___item--dsc">
                     <label for="descricao">Descrição do produto</label>
-                    <input type="url" name="descricao" id="" placeholder="">
+                    <textarea name="descricao" id="" ></textarea>
                 </div>
                 <input type="button" value="Adicionar produto" class="adc__form___btn">
                 

@@ -35,11 +35,15 @@
     padding: 0.5rem;
 }
 
-.adc__form___item input{
+.adc__form___item input, .adc__form___item textarea{
     width: 100%;
+    
     border: 0;
     background-color: transparent;
     height: 1.8rem;
+}
+.adc__form___item textarea{
+    height: 4rem
 }
 
 .adc__form___item label{
@@ -49,8 +53,19 @@
 .adc__form___item--dsc label{
     font-size: 1rem;
 }
-.adc__form___item--dsc input{
-    height: 4rem;
+.adc__categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.adc__select{
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    height: 100%;
+    font-size: 0.9rem;
 }
 
 .adc__form___btn{

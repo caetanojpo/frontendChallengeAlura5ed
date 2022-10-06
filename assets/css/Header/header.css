@@ -66,7 +66,8 @@
 
 
 .header__icon{
-    display: flex;   
+    display: flex;  
+    align-items: center; 
 }
 
 .header__icon___pesquisa{
@@ -76,9 +77,6 @@
 }
 
 .header__icon___lupa{
-    align-items: center;
-    display: flex;
-    justify-content: center;
     transition: 0.2s;   
     cursor: pointer;
 }
@@ -182,7 +180,7 @@
     .header__icon{
         width: 25rem;
         justify-content: space-between;
-        margin-left: -5rem;
+        margin-left: -3.6rem;
     }
 
     .header__adc{

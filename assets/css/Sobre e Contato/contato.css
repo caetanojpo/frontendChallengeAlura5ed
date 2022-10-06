@@ -43,7 +43,7 @@
 
 .form__input {
     border: 0;
-    height: 2rem;  
+    height: 2rem; 
 }
 
 .form__input-msg{
@@ -51,7 +51,7 @@
 }
 
 .form__input:focus{
-    outline-color: var(--cor-azul);
+    outline: none;
 }
 
 .form__btn {
