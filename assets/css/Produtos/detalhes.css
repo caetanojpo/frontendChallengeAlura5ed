@@ -1,0 +1,144 @@
+
+.pdetalhes__figure{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor-bg);
+}
+
+.pdetalhes__container{
+    background-color: var(--cor-bg);
+}
+
+
+.pdetalhes__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+
+.pdetalhes__info h1{
+    font-size: 1.2rem;
+}
+
+.pdetalhes__info span{
+    font-weight: 700;
+}
+
+.pdetalhes__info p {
+    font-size: 0.8rem;
+}
+
+.pdetalhes__figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.pdetalhes__organizer h1{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    font-weight: 800;
+}
+
+.pdetalhes__organizer{
+    height: 100%;
+}
+
+.pdetalhes__ajust{
+    padding: 1rem;
+}
+
+
+.pdetalhes__lista{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.pdetalhes__item{
+    color: var(--cor-cinza);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+}
+
+.pdetalhes__item p{
+    font-weight: 700;
+}
+
+.pdetalhes__item img{
+    width: 100%;
+}
+
+.pdetalhes__item a, .pdetalhes__item a:visited{
+    color: var(--cor-azul);
+    font-size: 0.95rem;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.pdetalhes__item a:hover{
+    border-bottom: 1px solid var(--cor-azulescuro);
+    color: var(--cor-azulescuro);
+}
+
+@media screen and (min-width:1200px){
+
+
+    .pdetalhes__figure{
+        flex-direction: row;
+        padding: 0rem 6rem;
+        gap: 1rem;
+    }
+
+    .pdetalhes__organizer{
+        padding: 3rem 6rem;
+        padding-top: 0;
+    }
+
+    .pdetalhes__container{
+        padding: 3rem 6rem;
+    }
+
+    .pdetalhes__lista{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .pdetalhes__item{
+        width: fit-content;
+    }
+
+    .pdetalhes__info{
+        text-align: justify;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .pdetalhes__info h1{
+        font-size: 3rem;
+    }
+    
+    .pdetalhes__info span{
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    
+    .pdetalhes__info p {
+        font-size: 1rem;
+    }
+    
+    .pdetalhes__figure img{
+        width: 100%;
+        height: 100%;
+    }
+}

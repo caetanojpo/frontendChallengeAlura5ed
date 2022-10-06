@@ -1,0 +1,126 @@
+.main__produtos{
+    height: 100%;
+    background-color: var(--cor-bg);
+}
+.produtos__container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.produtos__info{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 1.5rem;
+}
+
+.produtos__info h2 {
+    color: var(--cor-cinza);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.produtos__info a, .produtos__info a:visited{
+    color: var(--cor-azul);
+    font-size: 0.97rem;
+    font-weight: bold;
+}
+
+.produtos__info a:hover{
+    border-bottom: 1px solid var(--cor-azulescuro);
+    color: var(--cor-azulescuro);
+}
+
+.produtos__organizer{
+    padding: 1rem;
+    height: 100%;
+}
+
+.produtos__lista{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.produtos__item{
+    color: var(--cor-cinza);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+}
+
+.produtos__item p{
+    font-weight: 700;
+}
+
+.produtos__item img{
+    width: 100%;
+}
+
+.produtos__item a, .produtos__item a:visited{
+    color: var(--cor-azul);
+    font-size: 0.95rem;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.produtos__item a:hover{
+    border-bottom: 1px solid var(--cor-azulescuro);
+    color: var(--cor-azulescuro);
+}
+
+@media screen and (min-width: 768px){
+    .produtos__info{
+        justify-content: space-between;
+        
+        padding: 1rem;
+    }
+    .produtos__organizer{
+        width: 100%;
+    }
+    .produtos__lista{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0;
+        overflow: hidden;
+       
+    }
+   
+   
+}
+
+@media screen and (min-width: 1200px){
+    .produtos__container{
+        padding: 0 8rem;
+        justify-content: space-around;
+    }
+
+    .produtos__container:first-child{
+        padding-top: 4rem;
+    }
+
+    .produtos__container:last-child{
+        padding-bottom: 4rem;
+    }
+    
+    .produtos__organizer{
+        margin-bottom: 5rem;
+    }
+
+    .produtos__lista{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0;
+        overflow: visible; 
+        
+    }
+
+}

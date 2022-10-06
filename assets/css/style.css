@@ -1,0 +1,22 @@
+:root {
+    --cor-azul: #2A7AE4;
+    --cor-azulescuro: #0956b9;
+    --cor-cinza: #464646;
+    --cor-cinzaclaro: #A2A2A2;
+    --cor-bg: #F5F5F5;
+    --cor-bg-azul: #EAF2FD;
+}
+
+*{
+    font-family: 'Raleway', sans-serif;
+    color: var(--cor-cinza);
+}
+
+body{
+    background-color: #FFFF;
+    
+}
+
+.clear{
+    clear: both;
+}

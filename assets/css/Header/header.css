@@ -1,0 +1,197 @@
+.header__container{
+    align-items: center;
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+}
+
+.header__logo{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 0.2rem;
+    height: 2rem;
+    width: 6.3rem;
+}
+
+.header__logo___game{
+    background-image: url('../../img/Vector.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 30%;
+    
+}
+
+.header__logo___alura{
+    display: flex;
+    height: 100%;
+    width: 70%;
+}
+
+.header__logo___alura--1{
+    background-image: url('../../img/AluraGeek-1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 50%;
+}
+
+.header__logo___alura--2{
+    background-image: url('../../img/AluraGeek.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 50%;
+}
+.header__login{
+    height: 3rem;
+    display: flex;
+}
+
+.header__login___btn {
+    background: transparent;
+    border: 1px solid var(--cor-azul);;
+    color: var(--cor-azul);
+    font-weight: 700;
+    width: 8.3rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.header__icon{
+    display: flex;   
+}
+
+.header__icon___pesquisa{
+    display: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.header__icon___lupa{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.2s;   
+    cursor: pointer;
+}
+
+.header__icon___lupa:hover{
+    color: var(--cor-azul);
+}
+
+.header__hidden{
+    display: hidden;
+}
+
+.header__adc{
+    height: 100%;
+    display: flex;
+    width: fit-content;
+}
+
+.header__adc___btn {
+    background: transparent;
+    border: 1px solid var(--cor-azul);;
+    color: var(--cor-azul);
+    font-weight: 700;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px){
+    .header__container{
+        justify-content: space-around;
+        
+    }
+    
+    .header__hidden{
+        display: inline-block;
+        width: 20%;
+        
+    }
+    .header__hidden2 {
+        width: 15%;
+    }
+    
+    .header__icon{
+        border-radius: 1rem;
+        order: -1;
+        width: 15rem;
+        justify-content: space-evenly;
+        height: 2rem;
+        background-color: var(--cor-bg);
+    }
+    .header__icon___pesquisa{
+        display: inline-block;
+    
+        width: 100%;
+        padding-left: 1rem;
+        border-radius: 1rem;
+        
+    }
+    .header__icon___pesquisa::placeholder{
+        color: lightgray;
+        font-weight: 200;
+    }
+    
+    .header__icon___pesquisa:hover{
+        cursor: text;
+    }
+    
+    .header__icon___pesquisa:focus{
+        outline: none;
+    }
+    
+    .header__link{
+        order: -2;
+    }
+    
+    
+    .header__icon___lupa{
+        color: var(--cor-cinzaclaro);
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .header__container{
+        justify-content: space-evenly;
+        height: 110px;
+    }
+    .header__logo{
+        width: 9rem;
+    }
+    
+    .header__hidden{
+        width: 20%;
+    }
+    .header__hidden2 {
+        width: 10%;
+    }
+    
+    .header__icon{
+        width: 25rem;
+        justify-content: space-between;
+        margin-left: -5rem;
+    }
+
+    .header__adc{
+        height: 70%;
+    }
+    
+    .header__adc___btn {
+        
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+}

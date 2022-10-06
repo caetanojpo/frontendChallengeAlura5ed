@@ -1,0 +1,129 @@
+.adm__container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-bg);
+    padding: 2rem 1.2rem;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.adm__info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.adm__info h1{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.adm__btn{
+    background-color: var(--cor-azul);
+    border: 0;
+    width: 9rem;
+    height: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.produtos__lista{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.produtos__item{
+    color: var(--cor-cinza);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+}
+
+.produtos__item p{
+    font-weight: 700;
+}
+
+.produtos__figure{
+    width: 100%;
+    position: relative;
+
+}  
+
+.produtos__figure img{
+    width: 100%;
+    float: left;
+}
+
+.produtos__icon{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    padding: 0.4rem;
+    justify-content: flex-end;
+}
+
+.fa-pen{
+    color: white;
+    cursor: pointer;
+}
+
+.fa-trash-can{
+    color: white;
+    cursor: pointer;
+}
+
+.produtos__item a, .produtos__item a:visited{
+    color: var(--cor-azul);
+    font-size: 0.95rem;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.produtos__item a:hover{
+    border-bottom: 1px solid var(--cor-azulescuro);
+    color: var(--cor-azulescuro);
+}
+
+@media screen and (min-width: 768px){
+   
+    .produtos__lista{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;       
+    }
+
+    .adm__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+     .produtos__item{
+        height: 100%;
+    }
+
+
+    
+}
+
+@media screen and (min-width: 1200px){
+    .adm__container{
+        padding: 4rem 8rem;
+    }
+    .produtos__lista{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+
+
+    .adm__info h1{
+        font-size: 2rem;
+    }
+
+}

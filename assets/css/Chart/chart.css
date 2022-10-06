@@ -1,0 +1,95 @@
+.chart__container{
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),url('../../img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 12rem;
+    justify-content: flex-end;
+    padding: 16px;
+    width: 100%;
+}
+
+.chart__conteudo{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 6.125rem;
+    justify-content: flex-end;
+    width: 18rem;
+}
+
+.chart__conteudo h1{
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 26px;
+    color: white;
+}
+
+.chart__conteudo p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 16px;
+    color: white;
+}
+
+.chart__conteudo button{
+    background-color: var(--cor-azul);
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    height: 5rem;
+    width: 8rem;
+}
+
+.chart__conteudo button:hover{
+    background-color: var(--cor-azulescuro);
+}
+
+@media screen and (min-width: 768px){
+  .chart__container{
+    height: 20rem;
+    align-items: flex-start;
+  }
+  .chart__conteudo{
+    width: fit-content;
+    height: fit-content;
+    gap: 1.5rem;
+  }
+  .chart__conteudo h1{
+    font-size: 2.7rem;
+    line-height: 40px;
+  }
+
+  .chart__conteudo p {
+    font-size: 1.17rem;
+    line-height: 0rem;
+  }
+
+  .chart__conteudo button{
+    height: 40px;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .chart__container{
+    height: 20rem;
+    align-items: flex-start;
+    padding-left: 10rem;
+    padding-bottom: 2rem;
+  }
+  .chart__conteudo h1{
+    font-size: 3.2rem;
+    line-height: 60px;
+  }
+  .chart__conteudo p {
+    font-size: 1.35rem;
+    line-height: 0rem;
+  }
+
+}

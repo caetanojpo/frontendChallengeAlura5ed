@@ -1,0 +1,22 @@
+.rodape{
+    align-items: center;
+    display: flex;
+    height: 102px;
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.rodape__text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.rodape__text h1{
+    color: var(--cor-cinza);
+    font-weight: 500;
+}
+

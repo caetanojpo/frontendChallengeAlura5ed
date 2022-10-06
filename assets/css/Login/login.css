@@ -1,0 +1,71 @@
+.login__container{
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--cor-bg);
+    
+}
+
+.login__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.login__form h1{
+    font-weight: 800;
+}
+
+.login__input{
+    border: 0;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 16rem;
+    box-shadow:
+    1.1px 1.6px 5.2px rgba(0, 0, 0, 0.056),
+    2.2px 3.2px 14.3px rgba(0, 0, 0, 0.066),
+    3.8px 5.7px 34.4px rgba(0, 0, 0, 0.068),
+    10px 15px 114px rgba(0, 0, 0, 0.07);
+}
+
+
+.login__btn{
+    background-color: var(--cor-azul);
+    border: 0;
+    width: 8rem;
+    height: 3rem;
+    color: white;
+    cursor: pointer;
+    box-shadow:
+    1.1px 1.6px 5.2px rgba(0, 0, 0, 0.056),
+    2.2px 3.2px 14.3px rgba(0, 0, 0, 0.066),
+    3.8px 5.7px 34.4px rgba(0, 0, 0, 0.068),
+    10px 15px 114px rgba(0, 0, 0, 0.07);
+}
+
+.login__input:focus{
+    outline-color: var(--cor-azul);
+}
+
+@media screen and (min-width: 768px){
+    .login__input{
+        width: 25rem;
+    }
+    .login__btn{
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .login__input{
+        width: 35rem;
+    }
+    .login__btn{
+        width: 35rem;
+    }
+}

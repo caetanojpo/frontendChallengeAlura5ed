@@ -1,0 +1,97 @@
+.main__sobrecontato{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: var(--cor-bg-azul);
+}
+
+.sct__sobre{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+.sobre__logo{
+    display: flex;
+    gap: 0.2rem;
+    height: 50px;
+    width: 176px;
+}
+
+.sobre__logo___game{
+    background-image: url('../../img/Vector.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 25%;
+}
+
+.sobre__logo___alura{
+    display: flex;
+    height: 100%;
+    width: 75%;
+}
+
+.sobre__logo___alura--1{
+    background-image: url('../../img/AluraGeek-1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 50%;
+}
+
+.sobre__logo___alura--2{
+    background-image: url('../../img/AluraGeek.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 50%;
+}
+
+.sobre__lista{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sobre__item a, .sobre__item a:visited {
+    color: var(--cor-cinza);
+    transition: 0.2s;
+}
+
+.sobre__item a:hover{
+    color: var(--cor-azul);
+}
+
+@media screen and (min-width: 768px){
+  .main__sobrecontato{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sobre__lista{
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+    .main__sobrecontato{
+        padding: 4rem 8rem;
+      }
+    .sct__sobre{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 5rem;
+    }
+    
+}
