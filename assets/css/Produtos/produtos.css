@@ -1,6 +1,7 @@
 .main__produtos{
     height: 100%;
     background-color: var(--cor-bg);
+    padding-top: 1rem;
 }
 .produtos__container{
     align-items: center;
