@@ -1,10 +1,10 @@
 .rodape{
     align-items: center;
     display: flex;
+    font-family: 'Raleway', sans-serif;
     height: 102px;
     justify-content: center;
     padding: 1rem;
-    font-family: 'Raleway', sans-serif;
 }
 
 .rodape__text{

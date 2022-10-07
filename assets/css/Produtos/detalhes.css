@@ -1,23 +1,21 @@
 
 .pdetalhes__figure{
-    width: fit-content;
-    height: 100%;
+    align-items: center;
+    background-color: var(--cor-bg);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 100%;
     width: 100%;
-    background-color: var(--cor-bg);
 }
 
 .pdetalhes__container{
     background-color: var(--cor-bg);
 }
 
-
 .pdetalhes__info{
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 0.5rem;
     padding-top: 1rem;
 }
@@ -35,14 +33,14 @@
 }
 
 .pdetalhes__figure img{
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .pdetalhes__organizer h1{
     font-size: 1.2rem;
-    padding: 1rem 0;
     font-weight: 800;
+    padding: 1rem 0;
 }
 
 .pdetalhes__organizer{
@@ -53,14 +51,13 @@
     padding: 1rem;
 }
 
-
 .pdetalhes__lista{
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 0;
-    overflow: hidden;
     height: 100%;
+    overflow: hidden;
 }
 
 .pdetalhes__item{
@@ -92,36 +89,34 @@
 }
 
 @media screen and (min-width:1200px){
-
-
     .pdetalhes__figure{
         flex-direction: row;
-        padding: 0rem 6rem;
         gap: 1rem;
+        padding: 0rem 6rem;
     }
-
+    
     .pdetalhes__organizer{
         padding: 3rem 6rem;
         padding-top: 0;
     }
-
+    
     .pdetalhes__container{
         padding: 3rem 6rem;
     }
-
+    
     .pdetalhes__lista{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
-
+    
     .pdetalhes__item{
         width: fit-content;
     }
-
+    
     .pdetalhes__info{
+        justify-content: flex-start;
         text-align: justify;
         width: 100%;
-        justify-content: flex-start;
     }
     
     .pdetalhes__info h1{
@@ -129,8 +124,8 @@
     }
     
     .pdetalhes__info span{
-        font-weight: 700;
         font-size: 1.2rem;
+        font-weight: 700;
     }
     
     .pdetalhes__info p {
@@ -138,7 +133,7 @@
     }
     
     .pdetalhes__figure img{
-        width: 100%;
         height: 100%;
+        width: 100%;
     }
 }

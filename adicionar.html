@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
-    </style>
+    <title>Adicionar Produto - AluraGeek</title>
     
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -20,6 +16,7 @@
     
     <script src="https://kit.fontawesome.com/24b812ddf1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     
     <header class="header__container">
@@ -48,7 +45,7 @@
                 <h1>Adicionar novo produto</h1>
                 <div class="adc__form___item">
                     <label for="link">URL da imagem</label>
-                    <input type="url" name="link" id="" placeholder="">
+                    <input type="url" name="link" id="" placeholder="https://..." pattern="https://*" >
                 </div>
                 <div class="adc__form___item adc__categoria">
                     <label for="categoria" class="">Categoria:</label>
@@ -115,14 +112,11 @@
                             <label for="nome" class="form__label">Nome</label>
                             <input type="text" name="nome" class="form__input">
                         </div>
-                        
                         <div class="form__borda form__borda-mensagem">
                             <label for="texto" class="form__label">Escreva sua mensagem</label>
                             <input type="text" name="texto" class="form__input form__input-msg">
                         </div>
-                        
                     </div>
-                    
                     <input type="submit" value="Enviar mensagem" class="form__btn">
                 </form>
             </div>

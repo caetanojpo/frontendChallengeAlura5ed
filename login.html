@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login ADM - AluraGeek</title>
     
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
-    </style>
     
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -21,8 +18,8 @@
     
     <script src="https://kit.fontawesome.com/24b812ddf1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
     <header class="header__container">
         <a href="./index.html" class="header__link">
             <div class="header__logo">
@@ -47,71 +44,68 @@
                 <h1>Iniciar Sessão</h1>
                 <input type="email" name="" id="" placeholder="Escreva seu email" class="login__input login__input-email">
                 <input type="password" placeholder="Escreva sua senha" class="login__input login__input-senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="
-                Mínimo de oito caracteres, pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial!" >
+                Mínimo de oito caracteres, pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial!" required>
                 <button class="login__btn">Entrar</a>
-            </form>
-        </section>
-        
-        <section class="main__sobrecontato">
-            <div class="sct__sobre">
-                <div class="sobre__logo">
-                    <div class="sobre__logo___game"></div>
-                    <div class="sobre__logo___alura">
-                        <div class="sobre__logo___alura--1"></div>
-                        <div class="sobre__logo___alura--2"></div>
-                    </div>
-                </div>
-                <div class="sobre__links">
-                    <ul class="sobre__lista">
-                        <li class="sobre__item">
-                            <a href="#">Quem somos nós</a>
-                        </li>
-                        <li class="sobre__item">
-                            <a href="#">Política de privacidade</a>
-                        </li>
-                        <li class="sobre__item">
-                            <a href="#">Programa de fidelidade</a>
-                        </li>
-                        <li class="sobre__item">
-                            <a href="#">Nossas lojas</a>
-                        </li>
-                        <li class="sobre__item">
-                            <a href="#">Quero ser franqueado</a>
-                        </li>
-                        <li class="sobre__item">
-                            <a href="#">Anuncie aqui</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="sct__contato">
-                <h2>Fale Conosco</h2>
-                <form action="" class="form__contato" method="post">
-                    <div class="form__campos">
-                        <div class="form__borda">
-                            <label for="nome" class="form__label">Nome</label>
-                            <input type="text" name="nome" class="form__input">
-                        </div>
-                        
-                        <div class="form__borda form__borda-mensagem">
-                            <label for="texto" class="form__label">Escreva sua mensagem</label>
-                            <input type="text" name="texto" class="form__input form__input-msg">
-                        </div>
-                        
-                    </div>
-                    
-                    <input type="submit" value="Enviar mensagem" class="form__btn">
                 </form>
+            </section>
+            
+            <section class="main__sobrecontato">
+                <div class="sct__sobre">
+                    <div class="sobre__logo">
+                        <div class="sobre__logo___game"></div>
+                        <div class="sobre__logo___alura">
+                            <div class="sobre__logo___alura--1"></div>
+                            <div class="sobre__logo___alura--2"></div>
+                        </div>
+                    </div>
+                    <div class="sobre__links">
+                        <ul class="sobre__lista">
+                            <li class="sobre__item">
+                                <a href="#">Quem somos nós</a>
+                            </li>
+                            <li class="sobre__item">
+                                <a href="#">Política de privacidade</a>
+                            </li>
+                            <li class="sobre__item">
+                                <a href="#">Programa de fidelidade</a>
+                            </li>
+                            <li class="sobre__item">
+                                <a href="#">Nossas lojas</a>
+                            </li>
+                            <li class="sobre__item">
+                                <a href="#">Quero ser franqueado</a>
+                            </li>
+                            <li class="sobre__item">
+                                <a href="#">Anuncie aqui</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sct__contato">
+                    <h2>Fale Conosco</h2>
+                    <form action="" class="form__contato" method="post">
+                        <div class="form__campos">
+                            <div class="form__borda">
+                                <label for="nome" class="form__label">Nome</label>
+                                <input type="text" name="nome" class="form__input">
+                            </div>
+                            <div class="form__borda form__borda-mensagem">
+                                <label for="texto" class="form__label">Escreva sua mensagem</label>
+                                <input type="text" name="texto" class="form__input form__input-msg">
+                            </div>
+                        </div>
+                        <input type="submit" value="Enviar mensagem" class="form__btn">
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="rodape">
+            <div class="rodape__text">
+                <h1>Desenvolvido por João Pedro Caetano</h1>
+                <h1>2022</h1>
             </div>
-        </section>
-    </main>
-    
-    <footer class="rodape">
-        <div class="rodape__text">
-            <h1>Desenvolvido por João Pedro Caetano</h1>
-            <h1>2022</h1>
-        </div>
-    </footer>
-    
-</body>
-</html>
+        </footer>
+        
+    </body>
+    </html>

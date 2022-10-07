@@ -3,23 +3,22 @@
 :root {
     --cor-azul: #2A7AE4;
     --cor-azulescuro: #0956b9;
-    --cor-cinza: #464646;
-    --cor-cinzaclaro: #A2A2A2;
     --cor-bg: #F5F5F5;
     --cor-bg-azul: #EAF2FD;
+    --cor-cinza: #464646;
+    --cor-cinzaclaro: #A2A2A2;
 }
 
-*{
-    font-family: 'Raleway', sans-serif;
+* {
     color: var(--cor-cinza);
+    font-family: 'Raleway', sans-serif;
 }
 
-body{
+body {
     background-color: #FFFF;
-    
 }
 
-.clear{
+.clear {
     clear: both;
 }
 

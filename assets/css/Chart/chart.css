@@ -24,17 +24,17 @@
 }
 
 .chart__conteudo h1{
+    color: white;
     font-size: 1.35rem;
     font-weight: 700;
     line-height: 26px;
-    color: white;
 }
 
 .chart__conteudo p{
+    color: white;
     font-size: 0.8rem;
     font-weight: 600;
     line-height: 16px;
-    color: white;
 }
 
 .chart__conteudo button{
@@ -52,44 +52,45 @@
 }
 
 @media screen and (min-width: 768px){
-  .chart__container{
-    height: 20rem;
-    align-items: flex-start;
-  }
-  .chart__conteudo{
-    width: fit-content;
-    height: fit-content;
-    gap: 1.5rem;
-  }
-  .chart__conteudo h1{
-    font-size: 2.7rem;
-    line-height: 40px;
-  }
-
-  .chart__conteudo p {
-    font-size: 1.17rem;
-    line-height: 0rem;
-  }
-
-  .chart__conteudo button{
-    height: 40px;
-  }
+    .chart__container{
+        align-items: flex-start;
+        height: 20rem;
+    }
+    
+    .chart__conteudo{
+        height: fit-content;
+        gap: 1.5rem;
+        width: fit-content;
+    }
+    
+    .chart__conteudo h1{
+        font-size: 2.7rem;
+        line-height: 40px;
+    }
+    
+    .chart__conteudo p {
+        font-size: 1.17rem;
+        line-height: 0rem;
+    }
+    
+    .chart__conteudo button{
+        height: 40px;
+    }
 }
 
 @media screen and (min-width:1200px){
-  .chart__container{
-    height: 20rem;
-    align-items: flex-start;
-    padding-left: 10rem;
-    padding-bottom: 2rem;
-  }
-  .chart__conteudo h1{
-    font-size: 3.2rem;
-    line-height: 60px;
-  }
-  .chart__conteudo p {
-    font-size: 1.35rem;
-    line-height: 0rem;
-  }
-
+    .chart__container{
+        align-items: flex-start;
+        height: 20rem;
+        padding-left: 10rem;
+        padding-bottom: 2rem;
+    }
+    .chart__conteudo h1{
+        font-size: 3.2rem;
+        line-height: 60px;
+    }
+    .chart__conteudo p {
+        font-size: 1.35rem;
+        line-height: 0rem;
+    }
 }
