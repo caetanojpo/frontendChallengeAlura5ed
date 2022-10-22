@@ -66,6 +66,11 @@
     background-color: var(--cor-azulescuro);
 }
 
+.contato__erro{
+    color: red;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 768px){
   .sct__contato{
     flex: 0.9;

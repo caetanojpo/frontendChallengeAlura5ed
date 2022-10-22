@@ -45,7 +45,7 @@
                 <h1>Adicionar novo produto</h1>
                 <div class="adc__form___item">
                     <label for="link">URL da imagem</label>
-                    <input type="url" name="link" id="" placeholder="https://..." pattern="https://*" >
+                    <input type="file" name="link" id="" placeholder="Clique para enviar sua imagem" >
                 </div>
                 <div class="adc__form___item adc__categoria">
                     <label for="categoria" class="">Categoria:</label>
@@ -58,16 +58,17 @@
                 </div>
                 <div class="adc__form___item">
                     <label for="nome">Nome do Produto</label>
-                    <input type="text" name="nome" id="" placeholder="">
+                    <input type="text" name="nome" id="" class="adicionar__nome" placeholder="">
                 </div>
                 <div class="adc__form___item">
                     <label for="preco">Preço do produto</label>
-                    <input type="number" name="preco" id="" placeholder="">
+                    <input type="number" name="preco" class="adicionar__valor" id="" placeholder="">
                 </div>
                 <div class="adc__form___item adc__form___item--dsc">
                     <label for="descricao">Descrição do produto</label>
-                    <textarea name="descricao" id="" ></textarea>
+                    <textarea name="descricao" id="" class="adicionar__txt"></textarea>
                 </div>
+                <span class="contato__erro"></span>
                 <button class="adc__form___btn">Adicionar</button>
             </form>
         </section>
@@ -106,18 +107,21 @@
             </div>
             <div class="sct__contato">
                 <h2>Fale Conosco</h2>
-                <form action="" class="form__contato" method="post">
+                <form class="form__contato">
                     <div class="form__campos">
                         <div class="form__borda">
                             <label for="nome" class="form__label">Nome</label>
-                            <input type="text" name="nome" class="form__input">
+                            <input type="text" name="nome" id="contato-nome" class="form__input">
                         </div>
+                        
                         <div class="form__borda form__borda-mensagem">
                             <label for="texto" class="form__label">Escreva sua mensagem</label>
-                            <input type="text" name="texto" class="form__input form__input-msg">
+                            <input type="text" name="texto" id="contato-msg" class="form__input form__input-msg">
                         </div>
+                        
                     </div>
-                    <input type="submit" value="Enviar mensagem" class="form__btn">
+                    <span class="contato__erro"></span>
+                    <button class="form__btn">Enviar mensagem</button>
                 </form>
             </div>
         </section>
@@ -129,6 +133,8 @@
             <h1>2022</h1>
         </div>
     </footer>
-    
+    <script src="./assets/js/form-adicionar.js"></script>
+    <script src="./assets/js/form-contato.js"></script>
+    <script src="./assets/js/filtra.js"></script>
 </body>
 </html>
